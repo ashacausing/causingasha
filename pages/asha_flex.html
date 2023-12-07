@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flex Page Example</title>
+    <style>
+        
+        
+
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+			 
+        }
+
+        header {
+            border-radius: 50%;
+            color: #fff;
+            text-align: center;
+        }
+
+                .btn {
+        font-size: 1.2rem;
+        padding: 1rem 2.5rem;
+        border: none;
+        outline: none;
+        border-radius: 0.4rem;
+        cursor: pointer;
+        text-transform: uppercase;
+        background-color: rgb(14, 14, 26);
+        color: rgb(234, 234, 234);
+        font-weight: 700;
+        transition: 0.6s;
+        box-shadow: 0px 0px 60px #1f4c65;
+        -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+        }
+        .btn:active {
+        scale: 0.92;
+        }
+
+        .btn:hover {
+        background: rgb(2,29,78);
+        background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+        color: rgb(4, 4, 38);
+        }
+        nav {
+            display: flex;
+            justify-content: right;
+            list-style: none;
+            padding: 0;
+            column-gap: 20px;
+        }
+        nav li {
+            margin: 0 20px;
+        }
+
+        .content {
+			
+            flex: 1;
+            padding: 20px;
+			box-shadow: 0.0 5px;
+			
+        }
+
+        footer {
+           
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+			box-shadow: 0.0 10px;
+
+        }
+        .image-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 10px;
+        }
+
+        .image-container img {
+        width: 500px; 
+        height: 500px;
+        }
+        #video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        }
+
+		
+			
+			
+		p	{
+		background-color: white;
+		background-image: 200px;
+				
+		}
+        h1	{
+		background-color:black;
+		background-image: 200px;
+				
+		}
+			
+
+	</style>
+</head>
+<body>
+    
+        <nav>
+            <a href="index.html"><button class="btn">Homepage</button></a>
+            <a href="Intro.Asha.html"><button class="btn">IT Blog</button></a>
+            <a href="asha_flex.html"><button class="btn">flexpage</button></a>
+        </nav>
+    <header>
+        <h1>ASHA ALEXA CAUSING</h1>
+		<img src="media/22.jpg" height="300px" width="300px" text="center"> 
+	
+       
+    </header>
+
+
+    <div class="content" style="text-align: center;" >
+       <video controls width="700" height="500" >
+			<source src="media/19.mp4" type="video/mp4">
+			
+         </video>
+    </div>
+    <video autoplay muted loop id="video-background" >
+        <source src="media/20.mp4" type="video/mp4">
+    </video>
+    <div>
+        <div class="image-container"  >
+            <img src="media/1.jpg">
+            <img src="media/2.jpg"  >
+            <img src="media/3.jpg" >
+			<img src="media/4.jpg" >
+			<img src="media/5.jpg" >
+			<img src="media/6.jpg" >
+			<img src="media/7.jpg" >
+			<img src="media/8.jpg" >
+			<img src="media/9.jpg" >
+			<img src="media/10.jpg" >
+			<img src="media/11.jpg" >
+			<img src="media/12.jpg" >
+			<img src="media/13.jpg" >
+			<img src="media/14.jpg" >
+			<img src="media/15.jpg" >
+			<img src="media/16.jpg" >
+			<img src="media/17.jpg" >
+			<img src="media/18.jpg" >
+
+          </div>
+         <div class="container1" style="text-align: center;">
+            <a target="_blank" href="https://www.facebook.com"><button type="button"><img src="media/fb.png" height="20px" width="20px" ></button></a>
+            <a target="_blank" href="https://www.instagram.com"><button type="button"><img src="media/ig.jpg" height="20px" width="20px" ></button></button></a>
+            <a target="_blank" href="https://www.youtube.com"><button type="button"><img src="media/yt.png" height="20px" width="20px" ></button></button></a>
+        </div>
+          
+    <footer>
+        <h2> &copy; My Flex Page 2023  </h2>
+    </footer>
+</body>
+</html>
